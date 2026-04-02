@@ -11,193 +11,208 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="container">
-      <div class="logo">AIrifin</div>
-      <div class="nav-links">
-        <a href="#workflows">Workflows</a>
-        <a href="#technology">Technology</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="#" class="btn-primary">Get Started</a>
-      </div>
-      <button class="menu-toggle">☰</button>
-    </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <div>
-        <h1>AI-Powered CFO Workflows</h1>
-        <p>Automate variance analysis, board commentary, investor updates, and live dashboards with AIrifin. Designed for mid-market finance teams.</p>
-        <a href="#workflows" class="btn-primary">Explore Workflows</a>
-        <a href="#contact" class="btn-ghost">Request Demo</a>
+<nav>
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo"><span style="color:#2563EB;">AI</span>rifin</a>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="technology.html">Technology</a>
+      <a href="workflows.html">Workflows</a>
+      <a href="contact.html">Contact</a>
+      <a href="mailto:mark@airifin.com" class="btn-primary">Request a Demo</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <p class="section-label fade-in">AI-Powered CFO Workflows</p>
+      <h1 class="fade-in">Your finance team should be analyzing,<br>not assembling.</h1>
+      <p class="hero-sub fade-in">AIrifin manages your AI infrastructure so your CFO spends time on decisions — not spreadsheets. Variance analysis, board commentary, investor updates, and live dashboards — delivered automatically.</p>
+      <div class="hero-cta fade-in">
+        <a href="mailto:mark@airifin.com" class="btn-primary">Request a Demo</a>
+        <a href="#how-it-works" class="btn-ghost">See How It Works →</a>
       </div>
+    </div>
+    <div class="hero-visual fade-in">
       <div class="chat-mockup">
         <div class="chat-header">
           <div class="chat-dot"></div>
-          <p>AIrifin Assistant</p>
+          <span>AIrifin CFO Agent</span>
+          <span style="margin-left:auto;font-size:11px;color:#22C55E;">● Online</span>
         </div>
         <div class="chat-messages">
-          <div class="msg-user">Show me March 2026 variance</div>
+          <div class="msg-user">Run March variance analysis</div>
           <div class="msg-bot">
-            <p>MARCH 2026 VARIANCE</p>
+            <strong style="display:block;margin-bottom:8px;font-size:12px;color:#94A3B8;">MARCH 2026 — VARIANCE ANALYSIS</strong>
             <table class="msg-table">
-              <thead>
-                <tr>
-                  <th>Metric</th>
-                  <th>Actual</th>
-                  <th>Budget</th>
-                  <th>Variance</th>
-                </tr>
-              </thead>
+              <thead><tr><th>Line Item</th><th>Actual</th><th>Budget</th><th>Var</th></tr></thead>
               <tbody>
-                <tr>
-                  <td>Revenue</td>
-                  <td>$9.1M</td>
-                  <td>$9.75M</td>
-                  <td>-6.4% 🔴</td>
-                </tr>
-                <tr>
-                  <td>Commercial</td>
-                  <td>$4.2M</td>
-                  <td>$4.8M</td>
-                  <td>-$0.6M 🔴</td>
-                </tr>
-                <tr>
-                  <td>Healthcare</td>
-                  <td>$1.85M</td>
-                  <td>$1.75M</td>
-                  <td>+$0.1M 🟢</td>
-                </tr>
-                <tr>
-                  <td>Services</td>
-                  <td>$0.98M</td>
-                  <td>$1.1M</td>
-                  <td>-$0.12M 🔴</td>
-                </tr>
-                <tr>
-                  <td>Net Income</td>
-                  <td>$2.69M</td>
-                  <td>$3.23M</td>
-                  <td>-16.5% 🔴</td>
-                </tr>
+                <tr><td>Total Revenue</td><td>$9.1M</td><td>$9.75M</td><td style="color:#F87171;">-6.4%</td></tr>
+                <tr><td style="padding-left:16px;color:#94A3B8;">Commercial</td><td style="color:#94A3B8;">$4.2M</td><td style="color:#94A3B8;">$4.8M</td><td style="color:#F87171;">-$0.6M</td></tr>
+                <tr><td style="padding-left:16px;color:#94A3B8;">Healthcare</td><td style="color:#94A3B8;">$1.85M</td><td style="color:#94A3B8;">$1.75M</td><td style="color:#4ADE80;">+$0.1M</td></tr>
+                <tr><td>Net Income</td><td>$2.69M</td><td>$3.23M</td><td style="color:#F87171;">-16.5%</td></tr>
               </tbody>
             </table>
-            <p>The variance in March 2026 reflects lower-than-expected revenue in the Commercial and Services segments, partially offset by stronger performance in Healthcare. Net income was impacted by higher operating costs in the Commercial segment.</p>
+            <p style="margin-top:10px;font-size:12px;line-height:1.5;">March closed below plan. Commercial missed on two slipped deals (Timing driver). Healthcare beat on new hospital contract (Volume driver).</p>
           </div>
+          <div style="font-size:11px;color:#475569;text-align:right;margin-top:4px;">📊 Full report saved to Google Sheets</div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Workflows Section -->
-  <section id="workflows" class="section section-gray">
-    <div class="container">
-      <div class="section-label">Workflows</div>
-      <h2 class="section-title">Automate Your Finance Operations</h2>
-      <p class="section-subtitle">AIrifin automates repetitive tasks, freeing your team to focus on strategic analysis.</p>
-      <div class="filter-bar">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="reporting">Reporting</button>
-        <button class="filter-btn" data-filter="analysis">Analysis</button>
-        <button class="filter-btn" data-filter="forecasting">Forecasting</button>
+<!-- HOW IT WORKS -->
+<section class="section section-gray" id="how-it-works">
+  <div class="container">
+    <p class="section-label fade-in" style="text-align:center;">How It Works</p>
+    <h2 class="section-title fade-in" style="text-align:center;">Three steps. No new software.</h2>
+    <div class="steps fade-in">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Connect your data</h3>
+        <p>QuickBooks, NetSuite, SAP, Pigment, Anaplan, or Google Sheets. We integrate with your existing systems — no migrations, no replacements.</p>
       </div>
-      <div class="card-grid">
-        <!-- Workflow cards will be added here -->
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>AI analyzes</h3>
+        <p>Variance analysis, forecast monitoring, KPI tracking, and board commentary run automatically on your close schedule.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- Technology Section -->
-  <section id="technology" class="section">
-    <div class="container">
-      <div class="section-label">Technology</div>
-      <h2 class="section-title">Built for Finance Teams</h2>
-      <p class="section-subtitle">AIrifin leverages the latest AI to deliver accurate, actionable insights.</p>
-      <div class="tech-strip">
-        <span class="tech-badge">LLM Integration</span>
-        <span class="tech-badge">Real-time Data</span>
-        <span class="tech-badge">Secure</span>
-        <span class="tech-badge">Custom Workflows</span>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>CFO reviews</h3>
+        <p>Board-ready outputs delivered to Google Chat, Google Sheets, or email. You approve before anything goes out.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- About Section -->
-  <section id="about" class="section section-gray">
-    <div class="container">
-      <div class="section-label">About</div>
-      <h2 class="section-title">Our Mission</h2>
-      <p class="section-subtitle">We believe AI can transform finance by automating routine tasks and enhancing decision-making.</p>
-      <div class="founder-section">
-        <div>
-          <div class="founder-photo">JD</div>
-          <h3>John Doe</h3>
-          <p>Founder & CEO</p>
-          <div class="credential-badges">
-            <span class="credential-badge">CFA</span>
-            <span class="credential-badge">Ex-McKinsey</span>
+<!-- FEATURED WORKFLOWS -->
+<section class="section">
+  <div class="container">
+    <p class="section-label fade-in">What You Get</p>
+    <h2 class="section-title fade-in">The outputs your finance team needs most.</h2>
+    <p class="section-subtitle fade-in">A sample of the 35 workflows included in AIrifin.</p>
+    <div class="card-grid fade-in">
+      <div class="card">
+        <div style="font-size:28px;margin-bottom:12px;">📊</div>
+        <h3>Variance Analyzer</h3>
+        <p>Monthly P&L variance vs budget with driver commentary — Volume, Price, Mix, Timing, or One-time — ready in minutes not hours.</p>
+        <span class="badge badge-blue" style="margin-top:16px;display:inline-block;">Monthly</span>
+      </div>
+      <div class="card">
+        <div style="font-size:28px;margin-bottom:12px;">🎯</div>
+        <h3>Board Deck Builder</h3>
+        <p>CFO financial section structured and formatted for board presentation — automatically built from your actuals and narratives.</p>
+        <span class="badge badge-green" style="margin-top:16px;display:inline-block;">Quarterly</span>
+      </div>
+      <div class="card">
+        <div style="font-size:28px;margin-bottom:12px;">📄</div>
+        <h3>Investor Update</h3>
+        <p>Data-driven investor memo drafted automatically from your actuals, KPIs, and cash position. Review and send in minutes.</p>
+        <span class="badge badge-blue" style="margin-top:16px;display:inline-block;">Monthly</span>
+      </div>
+      <div class="card">
+        <div style="font-size:28px;margin-bottom:12px;">💰</div>
+        <h3>Cash Monitor</h3>
+        <p>13-week cash forecast with burn rate calculation and runway alerts. Know your position before the board asks.</p>
+        <span class="badge badge-orange" style="margin-top:16px;display:inline-block;">Weekly</span>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:32px;" class="fade-in">
+      <a href="workflows.html" style="color:#2563EB;font-weight:600;text-decoration:none;font-size:15px;">See all 35 workflows →</a>
+    </div>
+  </div>
+</section>
+
+<!-- DEMO SECTION -->
+<section class="section section-navy">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:40px;">
+      <p class="section-label fade-in" style="color:#60A5FA;">See It In Action</p>
+      <h2 class="fade-in" style="font-size:36px;font-weight:700;color:white;margin-bottom:12px;">Ask AIrifin a question.<br>Get board-ready analysis in seconds.</h2>
+      <p class="fade-in" style="color:#94A3B8;font-size:16px;">The same analysis your team spends hours on — delivered automatically to Google Chat.</p>
+    </div>
+    <div style="max-width:600px;margin:0 auto;" class="fade-in">
+      <div class="chat-mockup" style="box-shadow:0 0 0 1px rgba(255,255,255,0.1);">
+        <div class="chat-header">
+          <div class="chat-dot"></div>
+          <span>AIrifin CFO Agent</span>
+          <span style="margin-left:auto;font-size:11px;color:#22C55E;">● Online</span>
+        </div>
+        <div class="chat-messages">
+          <div class="msg-user">Run December variance analysis</div>
+          <div class="msg-bot">
+            <strong style="display:block;margin-bottom:8px;font-size:12px;color:#94A3B8;">DECEMBER 2025 — VARIANCE ANALYSIS</strong>
+            <table class="msg-table">
+              <thead><tr><th>Line Item</th><th>Actual</th><th>Budget</th><th>Var %</th></tr></thead>
+              <tbody>
+                <tr><td>Total Revenue</td><td>$22.5M</td><td>$11.4M</td><td style="color:#4ADE80;">+97.8%</td></tr>
+                <tr><td>Gross Profit</td><td>$12.7M</td><td>$7.0M</td><td style="color:#4ADE80;">+81.4%</td></tr>
+                <tr><td>Net Income</td><td>$10.3M</td><td>$4.3M</td><td style="color:#4ADE80;">+140%</td></tr>
+              </tbody>
+            </table>
+            <p style="margin-top:10px;font-size:12px;line-height:1.5;">December closed with net income of $10.3M, beating budget by $6.0M. Revenue exceeded plan by 97.8% — driven by Volume in peak ski season demand significantly above seasonal budget assumptions. All expense lines favorable. Strongest month in the property's operating history.</p>
           </div>
-        </div>
-        <div>
-          <p>John founded AIrifin in 2025 after leading finance teams at Fortune 500 companies. His vision is to democratize AI for mid-market finance teams.</p>
+          <div style="font-size:11px;color:#475569;text-align:right;margin-top:4px;">📊 Full report saved → <a href="#" style="color:#60A5FA;text-decoration:none;">Open in Google Sheets</a></div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="section-label">Contact</div>
-      <h2 class="section-title">Get in Touch</h2>
-      <p class="section-subtitle">Ready to automate your finance workflows? Let’s talk.</p>
-      <div class="contact-grid">
-        <div>
-          <form>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" required>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn-primary">Submit</button>
-          </form>
-        </div>
-        <div>
-          <h3>What to Expect</h3>
-          <ol class="expect-steps">
-            <li>We’ll schedule a 30-minute discovery call.</li>
-            <li>You’ll receive a tailored demo based on your needs.</li>
-            <li>We’ll outline a pilot plan for your team.</li>
-          </ol>
-        </div>
+      <div style="text-align:center;margin-top:24px;">
+        <a href="mailto:mark@airifin.com" class="btn-primary" style="font-size:15px;padding:14px 28px;">Request a live demo with your data →</a>
+        <p style="color:#475569;font-size:13px;margin-top:12px;">📹 Video demos coming soon</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="logo">AIrifin</div>
-      <div class="footer-links">
-        <a href="#workflows">Workflows</a>
-        <a href="#technology">Technology</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+<!-- TECH STRIP -->
+<section style="padding:32px 0;border-top:1px solid #E2E8F0;border-bottom:1px solid #E2E8F0;">
+  <div class="container">
+    <div class="tech-strip fade-in">
+      <span style="color:#64748B;font-size:14px;font-weight:500;">Works with leading AI models. Switch providers without redeployment.</span>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <span class="tech-badge">Gemini</span>
+        <span class="tech-badge">Claude</span>
+        <span class="tech-badge">GPT-4</span>
+        <span class="tech-badge">DeepSeek</span>
+        <span class="tech-badge">+ more</span>
       </div>
+      <a href="technology.html" style="color:#2563EB;font-size:14px;font-weight:500;white-space:nowrap;">See all integrations →</a>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<!-- FINAL CTA -->
+<section class="section" style="background:#F8FAFC;">
+  <div class="container" style="text-align:center;">
+    <h2 class="fade-in" style="font-size:36px;font-weight:700;color:#0F172A;margin-bottom:12px;">Ready to reclaim your CFO's time?</h2>
+    <p class="fade-in" style="color:#64748B;font-size:17px;margin-bottom:32px;">30-day pilot. Your data. No commitment until you've seen it work.</p>
+    <a href="mailto:mark@airifin.com" class="btn-primary fade-in" style="font-size:16px;padding:14px 36px;">Request a Pilot →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-logo"><span style="color:#60A5FA;">AI</span>rifin</div>
+    <p class="footer-tagline">AI-powered CFO workflows for mid-market finance teams.</p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="technology.html">Technology</a>
+      <a href="workflows.html">Workflows</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+    <p class="footer-copy">© 2026 AIrifin LLC · Fort Lauderdale, FL · <a href="mailto:mark@airifin.com">mark@airifin.com</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
+<!-- Wed Apr  1 06:49:28 PM EDT 2026 -->
