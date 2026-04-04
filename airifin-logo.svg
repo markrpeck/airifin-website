@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 115" width="500" height="115">
+
+  <!-- ── Icon: outline bars (lower), dots + lines float above ── -->
+
+  <!-- Bars: start lower, leaving gap between bar top and dots -->
+  <rect x="4"  y="72" width="17" height="25" rx="2.5"
+        fill="none" stroke="#0D1B2A" stroke-width="2.8"/>
+  <rect x="26" y="58" width="17" height="39" rx="2.5"
+        fill="none" stroke="#0D1B2A" stroke-width="2.8"/>
+  <rect x="48" y="42" width="17" height="55" rx="2.5"
+        fill="none" stroke="#0D1B2A" stroke-width="2.8"/>
+  <rect x="70" y="24" width="17" height="73" rx="2.5"
+        fill="none" stroke="#0D1B2A" stroke-width="2.8"/>
+
+  <!-- Connector lines between dots (floating above bars) -->
+  <line x1="12.5" y1="58" x2="34.5" y2="42" stroke="#00A3FF" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="34.5" y1="42" x2="56.5" y2="24" stroke="#00A3FF" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="56.5" y1="24" x2="78.5" y2="8"  stroke="#00A3FF" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Dots: floating clearly above bar tops with visible gap -->
+  <circle cx="12.5" cy="58" r="4.5" fill="#00A3FF"/>
+  <circle cx="34.5" cy="42" r="4.5" fill="#00A3FF"/>
+  <circle cx="56.5" cy="24" r="4.5" fill="#00A3FF"/>
+  <circle cx="78.5" cy="8"  r="4.5" fill="#00A3FF"/>
+
+  <!-- ── Wordmark ── -->
+  <text x="108" y="76"
+        font-family="Arial, Helvetica, sans-serif"
+        font-weight="800"
+        font-size="58"
+        letter-spacing="1">
+    <tspan fill="#00A3FF">AI</tspan><tspan fill="#0D1B2A">RIFIN</tspan>
+  </text>
+
+  <!-- ── Tagline ── -->
+  <text x="110" y="97"
+        font-family="Arial, Helvetica, sans-serif"
+        font-weight="500"
+        font-size="11"
+        fill="#2F5D8C"
+        letter-spacing="5.5">AGENTIC EXCELLENCE</text>
+
+</svg>
