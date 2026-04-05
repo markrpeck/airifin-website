@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AIRIFIN pricing — managed AI infrastructure for mid-market finance and operations teams.">
+  <title>Pricing — AIRIFIN</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    .pricing-hero { text-align: center; padding: 80px 20px 48px; }
+    .pricing-hero h1 { font-size: 42px; font-weight: 800; color: #0D1B2A; margin-bottom: 16px; }
+    .pricing-hero p { font-size: 18px; color: #64748B; max-width: 560px; margin: 0 auto 12px; line-height: 1.6; }
+    .pricing-note { font-size: 13px; color: #94A3B8; }
+
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto 80px; padding: 0 20px; }
+
+    .pricing-card { background: #fff; border: 1.5px solid #E2E8F0; border-radius: 16px; padding: 36px 32px; position: relative; transition: box-shadow 0.2s; }
+    .pricing-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
+    .pricing-card.featured { border-color: #00A3FF; box-shadow: 0 0 0 3px rgba(0,163,255,0.12); }
+    .featured-badge { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: #00A3FF; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; padding: 4px 14px; border-radius: 100px; white-space: nowrap; }
+
+    .plan-name { font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #00A3FF; text-transform: uppercase; margin-bottom: 8px; }
+    .plan-price { font-size: 42px; font-weight: 800; color: #0D1B2A; line-height: 1; margin-bottom: 4px; }
+    .plan-price span { font-size: 16px; font-weight: 500; color: #64748B; }
+    .plan-desc { font-size: 14px; color: #64748B; margin: 12px 0 24px; line-height: 1.5; min-height: 42px; }
+    .plan-divider { border: none; border-top: 1px solid #E2E8F0; margin: 0 0 24px; }
+
+    .plan-features { list-style: none; padding: 0; margin: 0 0 32px; }
+    .plan-features li { font-size: 14px; color: #1E293B; padding: 7px 0; display: flex; align-items: flex-start; gap: 10px; line-height: 1.4; }
+    .plan-features li::before { content: "✓"; color: #00A3FF; font-weight: 700; font-size: 13px; margin-top: 1px; flex-shrink: 0; }
+    .plan-features li.muted { color: #94A3B8; }
+    .plan-features li.muted::before { color: #CBD5E1; }
+
+    .btn-plan { display: block; text-align: center; padding: 14px; border-radius: 10px; font-weight: 700; font-size: 14px; text-decoration: none; transition: all 0.2s; }
+    .btn-plan-primary { background: #0D1B2A; color: #fff; }
+    .btn-plan-primary:hover { background: #00A3FF; }
+    .btn-plan-featured { background: #00A3FF; color: #fff; }
+    .btn-plan-featured:hover { background: #0088DD; }
+    .btn-plan-outline { border: 2px solid #0D1B2A; color: #0D1B2A; }
+    .btn-plan-outline:hover { background: #0D1B2A; color: #fff; }
+
+    .setup-fee { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 24px 32px; max-width: 700px; margin: 0 auto 80px; text-align: center; }
+    .setup-fee h3 { font-size: 18px; font-weight: 700; color: #0D1B2A; margin-bottom: 8px; }
+    .setup-fee p { font-size: 14px; color: #64748B; line-height: 1.6; margin: 0; }
+
+    .pricing-faq { max-width: 700px; margin: 0 auto 80px; padding: 0 20px; }
+    .pricing-faq h2 { font-size: 28px; font-weight: 700; color: #0D1B2A; margin-bottom: 32px; text-align: center; }
+    .faq-item { margin-bottom: 28px; }
+    .faq-item h4 { font-size: 16px; font-weight: 700; color: #0D1B2A; margin-bottom: 8px; }
+    .faq-item p { font-size: 14px; color: #64748B; line-height: 1.6; margin: 0; }
+
+    .compare-section { background: #0D1B2A; padding: 64px 20px; text-align: center; margin-bottom: 0; }
+    .compare-section h2 { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 12px; }
+    .compare-section p { font-size: 16px; color: #94A3B8; max-width: 480px; margin: 0 auto 32px; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo"><img src="airifin-logo.svg" alt="AIRIFIN" height="36" style="display:block;"></a>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="workflows.html">Workflows</a>
+      <a href="technology.html">Technology</a>
+      <a href="pricing.html" class="active">Pricing</a>
+      <a href="contact.html" class="btn-primary">Request a Demo</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pricing-hero">
+    <h1>Simple, transparent pricing</h1>
+    <p>Managed AI infrastructure for mid-market teams. No API keys, no model management, no surprises — just results.</p>
+    <p class="pricing-note">All plans include a 30-day pilot on your actual data before you commit.</p>
+  </section>
+
+  <!-- Pricing Cards -->
+  <div class="pricing-grid">
+
+    <!-- Starter -->
+    <div class="pricing-card">
+      <div class="plan-name">Starter</div>
+      <div class="plan-price">$3,500<span>/mo</span></div>
+      <div class="plan-desc">One domain, fully managed. The fastest path from data to insight.</div>
+      <hr class="plan-divider">
+      <ul class="plan-features">
+        <li>1 AI domain (Finance <em>or</em> Operations)</li>
+        <li>Up to 3 workflows</li>
+        <li>1 data source connection (QBO, NetSuite, etc.)</li>
+        <li>Monthly reporting cadence</li>
+        <li>Google Chat, Slack, or Email delivery</li>
+        <li>Standard outputs (Sheets or Slides)</li>
+        <li>AIRIFIN manages all AI infrastructure</li>
+        <li class="muted">Knowledge base / narrative learning</li>
+        <li class="muted">Multiple data sources</li>
+        <li class="muted">Custom agent branding</li>
+      </ul>
+      <a href="contact.html" class="btn-plan btn-plan-primary">Start with Starter</a>
+    </div>
+
+    <!-- Growth (featured) -->
+    <div class="pricing-card featured">
+      <div class="featured-badge">MOST POPULAR</div>
+      <div class="plan-name">Growth</div>
+      <div class="plan-price">$7,500<span>/mo</span></div>
+      <div class="plan-desc">Finance and operations, fully integrated. Your agent gets smarter every month.</div>
+      <hr class="plan-divider">
+      <ul class="plan-features">
+        <li>2 AI domains (Finance + Operations)</li>
+        <li>Up to 8 workflows</li>
+        <li>Up to 3 data source connections</li>
+        <li>Weekly reporting cadence</li>
+        <li>All delivery channels</li>
+        <li>Custom outputs — your format, your templates</li>
+        <li>Financial knowledge base — narrative learning</li>
+        <li>Custom agent name and branding</li>
+        <li>AIRIFIN manages all AI infrastructure</li>
+        <li class="muted">Daily sync</li>
+        <li class="muted">Dedicated build time</li>
+      </ul>
+      <a href="contact.html" class="btn-plan btn-plan-featured">Start with Growth</a>
+    </div>
+
+    <!-- Scale -->
+    <div class="pricing-card">
+      <div class="plan-name">Scale</div>
+      <div class="plan-price">$15,000<span>/mo</span></div>
+      <div class="plan-desc">Unlimited domains and workflows. Your full AI operations infrastructure, managed end-to-end.</div>
+      <hr class="plan-divider">
+      <ul class="plan-features">
+        <li>Unlimited AI domains and workflows</li>
+        <li>Unlimited data source connections</li>
+        <li>Daily sync cadence</li>
+        <li>All delivery channels</li>
+        <li>Full knowledge base — style extraction + narrative learning</li>
+        <li>Custom agent branding and voice</li>
+        <li>Dedicated monthly build time (4 hrs)</li>
+        <li>Priority support</li>
+        <li>AIRIFIN manages all AI infrastructure</li>
+      </ul>
+      <a href="contact.html" class="btn-plan btn-plan-primary">Start with Scale</a>
+    </div>
+
+    <!-- Enterprise -->
+    <div class="pricing-card">
+      <div class="plan-name">Enterprise</div>
+      <div class="plan-price" style="font-size:32px;">Custom</div>
+      <div class="plan-desc">Multi-entity, custom models, compliance requirements, and SLA guarantees.</div>
+      <hr class="plan-divider">
+      <ul class="plan-features">
+        <li>Everything in Scale</li>
+        <li>Multi-entity / multi-subsidiary support</li>
+        <li>Custom model selection and fine-tuning</li>
+        <li>Dedicated GCP infrastructure (data never leaves your cloud)</li>
+        <li>SLA with uptime guarantees</li>
+        <li>Compliance review (SOC 2, HIPAA, SOX-adjacent)</li>
+        <li>Quarterly business reviews</li>
+        <li>Dedicated AIRIFIN engineer</li>
+      </ul>
+      <a href="contact.html" class="btn-plan btn-plan-outline">Talk to Us</a>
+    </div>
+
+  </div>
+
+  <!-- Setup Fee -->
+  <div class="setup-fee" style="padding: 0 20px; margin-bottom: 64px;">
+    <div style="background:#F8FAFC;border:1px solid #E2E8F0;border-radius:12px;padding:28px 36px;max-width:700px;margin:0 auto;">
+      <h3 style="font-size:17px;font-weight:700;color:#0D1B2A;margin:0 0 8px;">One-time onboarding fee: $2,500</h3>
+      <p style="font-size:14px;color:#64748B;line-height:1.6;margin:0;">Every new client includes a structured onboarding: we connect your data sources, configure your workflows, tune your agent to your format and voice, and run a full test cycle before go-live. This typically takes 10–15 hours of AIRIFIN engineering time. The $2,500 fee covers that work — and ensures your agent is production-ready from day one, not day thirty.</p>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="pricing-faq">
+    <h2>Common questions</h2>
+
+    <div class="faq-item">
+      <h4>What's a "domain"?</h4>
+      <p>A domain is a functional area of your business — Finance, Operations, Sales, HR. Each domain has its own AI agent tuned to that function. The Finance domain handles variance analysis, board decks, and cash monitoring. The Operations domain handles scheduling, vendor follow-ups, contract renewals, and inbox management. Most clients start with Finance and expand from there.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>What happens after the 30-day pilot?</h4>
+      <p>If you're happy — and we're confident you will be — we move to a monthly subscription starting on day 31. No lock-in after that. If the pilot doesn't deliver value, you walk away and owe nothing beyond the onboarding fee.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Do I need to manage the AI models?</h4>
+      <p>Never. That's the point. AIRIFIN selects the right model for each task, manages API keys and rate limits, handles token costs, and upgrades your infrastructure as better models become available. You interact with your agent. We handle everything behind it.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>What does "narrative learning" mean?</h4>
+      <p>Every report your agent generates gets compiled into a financial knowledge base specific to your business. Over time, your agent learns your board's recurring questions, your CFO's writing style, your seasonal patterns, and your company's context. A March board deck in month 6 is meaningfully better than the one from month 1 — because the agent has 5 months of your company's history to draw from.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Can you match our existing report formats?</h4>
+      <p>Yes — on Growth and above. We ingest your existing board decks, variance reports, and investor updates during onboarding, extract your format and structure, and configure your agent to match them exactly. Your team won't notice the difference except that it now takes minutes instead of hours.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>How is my financial data protected?</h4>
+      <p>Your data never touches a shared server. All credentials are stored encrypted in Google Cloud Secret Manager under your dedicated GCP project. On Enterprise, we deploy entirely within your own cloud environment. See our <a href="technology.html" style="color:#00A3FF;">technology page</a> for the full security architecture.</p>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section class="compare-section">
+    <h2>Not sure which plan is right?</h2>
+    <p>Most clients start with Starter or Growth. Book a 30-minute call — we'll walk through your setup and recommend the right fit.</p>
+    <a href="contact.html" class="btn-primary" style="font-size:15px;padding:14px 32px;">Request a scoping call →</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo"><img src="airifin-logo.svg" alt="AIRIFIN" height="32" style="display:block;margin:0 auto;"></div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="workflows.html">Workflows</a>
+      <a href="technology.html">Technology</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+    <p class="footer-copy">© 2026 AIRIFIN LLC · Fort Lauderdale, FL · <a href="mailto:mark@airifin.com">mark@airifin.com</a></p>
+  </footer>
+
+</body>
+</html>
